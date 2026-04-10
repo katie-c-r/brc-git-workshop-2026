@@ -1,6 +1,5 @@
 ---
 title: "Git for people who've been meaning to learn Git (but haven't yet)"
-subtitle: "NIHR Maudsley BRC"
 toc: false
 ---
 
@@ -19,7 +18,7 @@ Please complete the [setup instructions](setup.qmd) **before 23 April**. The ses
 
 |  |  |
 |--|--|
-| **Date** | Wednesday 23 April 2026 |
+| **Date** | Thursday 23 April 2026 |
 | **Time** | 14:00–16:00 |
 | **Room** | Robin Murray A & B, IoPPN, Denmark Hill |
 | **Presenter** | Dr Ewan Carr, King's College London |
@@ -50,10 +49,10 @@ Please complete the [setup instructions](setup.qmd) **before 23 April**. The ses
 | Time | Session |
 |------|---------|
 | 13:30 | Registration and coffee |
-| 14:00 | Welcome and introductions |
-| 14:05 | Hour 1: Concepts and demonstration |
+| 14:00 | Welcome |
+| 14:05 | **Hour 1: Concepts and demonstration** |
 | 14:55 | *Break* |
-| 15:00 | Hour 2: Hands-on exercises |
+| 15:00 | **Hour 2: Hands-on exercises** |
 | 15:40 | Group exercise: contributing to a shared repository |
 | 16:00 | Close |
 

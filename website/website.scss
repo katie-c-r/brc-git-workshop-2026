@@ -127,7 +127,13 @@ pre code {
 
 // ── Callouts ───────────────────────────────────────────────────
 div.callout {
-  border-radius: 0 6px 6px 0 !important;
+  border-radius: 0 !important;
+}
+
+div.callout .callout-title-container,
+div.callout .callout-body-container,
+div.callout .callout-body {
+  border-radius: 0 !important;
 }
 
 div.callout .callout-body {

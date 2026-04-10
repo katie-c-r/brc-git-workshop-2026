@@ -2,7 +2,7 @@
 
 **Git for people who've been meaning to learn Git (but haven't yet)**
 
-Wednesday 23 April 2026, 14:00–16:00  
+Thursday 23 April 2026, 14:00–16:00  
 Robin Murray A & B, IoPPN, Denmark Hill
 
 ## Workshop website

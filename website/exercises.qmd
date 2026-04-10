@@ -10,7 +10,7 @@ format:
     code-copy: true
 ---
 
-These exercises take you from zero to a working Git-and-GitHub setup on your own machine. Work through them in order. Each one builds on the last, but the **collaborative finale** at the end is self-contained — even if you get stuck earlier, you can still join in.
+These exercises take you from zero to a working Git-and-GitHub setup on your own machine. Work through them in order. Each one builds on the last, but the **collaborative exercise** at the end is self-contained — even if you get stuck earlier, you can still join in.
 
 If you get stuck at any point, raise your hand, and we'll come and help.
 
@@ -23,6 +23,7 @@ Make sure you have:
 - **Git installed** — open a terminal and run `git --version`. You should see a version number.
 - **A GitHub account** — if not, create one at [github.com](https://github.com)
 - **GitHub Desktop installed** (recommended for beginners) — [desktop.github.com](https://desktop.github.com)
+- **If you're following the command-line route:** install the **GitHub CLI** (`gh`) as described on the [setup page](setup.qmd#github-desktop)
 - **The example project folder** — download [`example.zip`](example.zip), unzip it somewhere you can find it (e.g. your Desktop). It contains a small R project: a dataset, three scripts, and a README.
 
 ::: {.callout-tip}
@@ -69,6 +70,7 @@ A quick check to make sure everything is ready before we dive in.
    ```bash
    gh auth status
    ```
+   If you get `gh: command not found`, go back to the [setup page](setup.qmd#github-desktop) and install the GitHub CLI first.
    If you see `Logged in to github.com`, you're ready. If not, run:
    ```bash
    gh auth login
@@ -332,7 +334,7 @@ In GitHub Desktop: **Branch → New Branch**, make a commit, then switch back vi
 
 ## Exercise 4 · Branches *(stretch — if you have time)* {#ex4}
 
-This exercise is for people who've finished Exercises 1–3 and want to go further. There's no pressure to complete it before the finale.
+This exercise is for people who've finished Exercises 1–3 and want to go further. There's no pressure to complete it before the collaborative exercise.
 
 Branches let you try something out without touching your working code. You create a branch, make changes there, and — when you're happy — merge it back into `main`.
 
@@ -423,7 +425,7 @@ In GitHub Desktop: **Branch → Delete Branch**.
 
 ---
 
-## Collaborative finale · Add your name {#finale}
+## Collaborative exercise · Add your name
 
 *~20 minutes · 15:40–16:00*
 
