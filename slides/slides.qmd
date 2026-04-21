@@ -75,15 +75,18 @@ format:
 
 ---
 
+::: {style="font-size: 1.1em;"}
 
 **Git**
-: Software on your computer that tracks changes to files and records project history.
+: [Software]{.alert} on your computer that tracks changes to files and records project history.
 
 **Repository**
-: A project folder that Git is watching, including the hidden `.git` folder that stores the history.
+: A [project folder]{.alert} that Git is watching, including the hidden `.git` folder that stores the history.
 
 **GitHub**
-: A website that hosts repositories online for backup, sharing, and collaboration.
+: A [website]{.alert} that hosts repositories online for backup, sharing, and collaboration.
+
+:::
 
 You can use Git entirely locally, without GitHub.
 
@@ -91,7 +94,7 @@ You can use Git entirely locally, without GitHub.
 
 ## How you interact with Git
 
-1. Through the [command line]{.alert}
+1. Through the [command line]{.alert}:
 
 ::: {style="font-size: 1.3em;"}
 ```bash
@@ -101,8 +104,7 @@ git commit -m "Add initial cleaning script"
 ```
 :::
 
-2. Through a [graphical client]{.alert} (e.g., GitHub Desktop, Tower)
-
+2. Through a [graphical client]{.alert} (e.g., GitHub Desktop, Tower).
 
 [Different interfaces, but doing the same thing underneath.]{.muted}
 
@@ -177,7 +179,7 @@ We can send and receive changes from the remote. This is referred to as "pushing
 
 ::: {.key-term-card .key-term-file-state}
 ::: {.key-term-title}
-Tracked / untracked
+Tracked vs. untracked
 :::
 New files in your folder are invisible to Git until you add them. Once added, Git watches them for changes.
 :::
@@ -691,7 +693,7 @@ and any assumptions or trade-offs involved.
 :::: {.columns}
 
 
-::: {.column .good-examples-column width="80%"}
+::: {.column .good-examples-column width="70%"}
 
 ### 🚀 Good examples
 
@@ -823,6 +825,8 @@ On GitHub Desktop, choose <kbd>Branch</kbd>→<kbd>New Branch...</kbd>
 
 Note that new commits now go on that branch, not `main`.
 
+---
+
 ## When you switch branches, your files switch too
 
 ![](images/branching/branching-flow-2.png){width="100%" fig-align="center"}
@@ -836,6 +840,8 @@ Note that new commits now go on that branch, not `main`.
 git switch main
 ```
 :::
+
+---
 
 ## When you're done, delete or merge back
 
@@ -926,6 +932,8 @@ A pull request is a way of asking to [merge a branch]{.alert} into `main`.
 3. On GitHub, open a pull request to merge into `main`
 
 The PR allows others to [review and approve]{.alert} your code, or suggest changes.
+
+---
 
 ## A simple workflow to follow
 
