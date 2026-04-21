@@ -134,8 +134,8 @@ First, copy the project files in:
 Then, back in GitHub Desktop:
 
 3. The files you copied appear in the **Changes** panel on the left
-4. Right-click `data` in the list and choose **Ignore all files in `data/`** — GitHub Desktop writes a `.gitignore` file and `data/` disappears from the list
-5. Do the same for `outputs`: right-click → **Ignore all files in `outputs/`**
+4. Right-click `data` in the list and choose **Ignore Folder (Add to .gitignore)** — GitHub Desktop writes a `.gitignore` file and `data/` disappears from the list
+5. Do the same for `outputs`: right-click → **Ignore Folder (Add to .gitignore)**
 6. Review the remaining files: you should see `README.md`, `scripts/`, and `.gitignore`
 7. In the bottom-left, write a commit message: `Initial commit`
 8. Click **Commit to main**
@@ -381,6 +381,14 @@ You don't have write access to the workshop repo, so you can't push to it direct
 2. Click **Fork** (top right) → **Create fork**
 3. You now have your own copy at `github.com/YOUR-USERNAME/brc-git-workshop-2026`
 
+::: {.callout-note}
+GitHub Desktop may ask **"How are you planning to use this fork?"**. Keep the default
+(**To contribute to the parent project**) and click **Continue** — this is the right
+choice for the workshop, as you'll be opening a pull request back to the presenter's repo.
+
+![](images/how-are-you-planning.png){width=600 fig-align="center"}
+:::
+
 ### Step 2: Clone your fork
 
 ::: {.panel-tabset}
@@ -457,11 +465,15 @@ Flag a helper — this usually means GitHub Desktop isn't signed in, or the CLI 
 
 ---
 
-## Exercise 4 · Branches *(go further)* {#ex4}
+## Exercise 4 · Working with Branches {#ex4}
 
-This exercise is for people who want to go further. Work through it at your own pace after the collaborative exercise.
+::: {.callout-note}
+We probably won't have time to cover this during the session, but it's here if you'd
+like to try it in your own time — or if you finish the earlier exercises early and want
+something extra to explore.
+:::
 
-Branches let you try something out without touching your working code. You create a branch, make changes there, and — when you're happy — merge it back into `main`.
+Branches let you try something out without touching your working code. You create a branch, make changes there, and merge it back into `main` when you're happy. For this exercise, use the repository you created in Exercises 1 and 2. You'll need to switch back to it first.
 
 ### Step 1: Create a branch
 
@@ -522,7 +534,9 @@ Notice that your change has disappeared from the files. It's safe on the branch 
 
 ### GitHub Desktop
 
-Go to **Branch → Merge into Current Branch**, select `my-experiment`, and click **Merge**.
+1. In the menu bar (Mac) or menu (Windows), go to **Branch → Merge into Current Branch**
+2. Select `my-experiment` from the list
+3. Click **Create a merge commit**
 
 ### Command line
 
@@ -534,7 +548,25 @@ git merge my-experiment
 
 Your change is now on `main`. Check the history — you'll see the commit from the branch has landed there.
 
-✅ **That's the branch workflow:** create → commit → switch back → merge. On a real project you'd do this whenever you want to try something without risking your working code.
+### Step 5: Push and view on GitHub
+
+::: {.panel-tabset}
+
+### GitHub Desktop
+
+Click **Push origin** in the top bar, then click **View on GitHub** to see your merged branch on GitHub.
+
+### Command line
+
+```bash
+git push
+```
+
+Then go to `https://github.com/YOUR-USERNAME/admissions-example` to see the result.
+
+:::
+
+✅ **That's the branch workflow:** create → commit → switch back → merge → push. On a real project you'd do this whenever you want to try something without risking your working code.
 
 ::: {.callout-tip collapse="true"}
 ## Tidying up

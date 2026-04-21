@@ -109,25 +109,17 @@ This step tells Git your name and email so they appear in your commits. You only
 Open a terminal (**Terminal** on Mac, **Git Bash** on Windows) and run these three commands, replacing the name and email with your own:
 
 ```bash
-git config --global user.name "Your Name"
-git config --global user.email "your.email@kcl.ac.uk"
+git config --global user.name "Ewan Carr"
+git config --global user.email "ewan.carr@kcl.ac.uk"
 git config --global init.defaultBranch main
 ```
 
-::: {.panel-tabset}
-
-### Mac
-
-```bash
-git config --global core.autocrlf input
-```
-
-### Windows
-
-```bash
-git config --global core.autocrlf true
-```
-
+::: {.callout-note}
+The name here is not your KCL username, your KCL login ID, or your GitHub username —
+it has nothing to do with GitHub. It is purely a local Git setting: the display name
+that will appear on your commits. Use your first and last name in normal sentence case,
+e.g. `"Ewan Carr"`. Your real name is recommended so collaborators can see who made each
+change.
 :::
 
 ::: {.callout-tip collapse="true"}
@@ -135,7 +127,6 @@ git config --global core.autocrlf true
 
 - `user.name` and `user.email` — attached to every commit you make, so collaborators know who made each change
 - `init.defaultBranch main` — new repositories will use `main` as the default branch name (the modern convention)
-- `core.autocrlf` — handles line endings correctly between Mac and Windows (avoids spurious file changes)
 
 These settings are stored in a file called `.gitconfig` in your home folder:
 
